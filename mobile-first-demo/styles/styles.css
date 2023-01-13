@@ -32,6 +32,11 @@ body {
   z-index: 1;
 }
 
+.idee-2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 h1 {
   /* font-size: 2rem; */
   font-size: clamp(1.7rem, 8vw, 3rem);
@@ -39,6 +44,7 @@ h1 {
   font-weight: 400;
   color: var(--c-color-light);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 h1 b {
@@ -67,14 +73,6 @@ button {
     margin-bottom: 0;
   }
 }
-
-/* flip */
-
-body .flip {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 /* header */
 
 .idee-1 header {
@@ -86,7 +84,7 @@ body .flip {
   overflow: hidden;
 }
 
-.flip header {
+.idee-2 header {
   background-color: var(--c-background-dark);
 
   display: flex;
@@ -98,21 +96,16 @@ body .flip {
   margin: 0 auto;
 }
 
-.flip header h1 {
+.idee-2 header h1 {
   filter: blur(6px);
   padding: 1rem;
 }
 
-.flip header p {
+.idee-2 header p {
   filter: blur(3px);
   padding: 1rem;
   background-color: green;
 }
-
-.flip header p:focus {
-  filter: blur(0px);
-}
-
 /* main */
 
 .idee-1 main {
@@ -139,7 +132,7 @@ body .flip {
   text-align: center;
 }
 
-.flip main {
+.idee-2 main {
   background-color: var(--c-background-dark);
 
   display: flex;
