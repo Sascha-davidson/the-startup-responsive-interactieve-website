@@ -35,7 +35,7 @@ body {
 .idee-2 {
   display: flex;
   flex-direction: column-reverse;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .idee-3 {
@@ -71,8 +71,8 @@ h2 {
 p {
   font-size: 1rem;
   color: var(--c-color-light);
-    padding: 0 0 1rem 0;
-    text-align: center;
+  padding: 0 0 1rem 0;
+  text-align: center;
 }
 
 button {
@@ -84,6 +84,16 @@ button {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1.125rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+  }
+}
+
 /* header */
 
 .idee-1 header {
@@ -103,8 +113,9 @@ button {
   align-items: center;
   max-width: 1000px;
   margin: 0 -1.5rem;
-  padding: 1.5rem 5% 5rem 5%;
+  padding: 1.5rem 1rem 5rem 1rem;
   border-radius: 40px 40px 0 0;
+  position: relative;
 }
 
 .idee-2 header .info-blind {
@@ -112,10 +123,37 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 3rem 5%;
+  background-color: var(--c-background-light);
 
 }
 
-.idee-2 header h1 {
+.test{
+  position: absolute;
+  top: 3rem;
+  left: 5%;
+  right: 3rem;
+  bottom: 5%;
+  backdrop-filter: blur(5px);
+}
+
+.test:hover{
+  clip-path: circle(8%);
+  filter: blur(0);
+}
+
+
+/*
+
+.info-blind:hover{
+  clip-path: circle(8%);
+  filter: blur(0);
+  
+}
+
+ */
+
+/* .idee-2 header h1 {
   filter: blur(6px);
   padding: 1rem;
 }
@@ -123,7 +161,7 @@ button {
 .idee-2 header p {
   filter: blur(3px);
   padding: 1rem;
-  background-color: green;
+  color: var(--c-color-dark);
 }
 
 .idee-2 header h1:hover {
@@ -132,13 +170,16 @@ button {
 
 .idee-2 header p:hover {
   filter: blur(0);
+} */
 
+.idee-2 header p {
+  color: var(--c-color-dark);
 }
 
 @media screen and (min-width: 600px) {
-.idee-2 header {
-  margin: 0 auto;
-}
+  .idee-2 header {
+    margin: 5rem auto 0 auto;
+  }
 }
 /* main */
 
@@ -219,8 +260,9 @@ main .intro .windows-or-apple section {
   display: none;
 }
 
-main .intro .windows-or-apple section p{
-padding-bottom: 0;}
+main .intro .windows-or-apple section p {
+  padding-bottom: 0;
+}
 
 main .intro .screen-reader {
   display: none;
