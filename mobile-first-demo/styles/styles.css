@@ -122,7 +122,6 @@ button {
   background-color: var(--c-background-light);
   max-width: 1000px;
   position: relative;
-  margin: 2rem -1.5rem;
   margin-bottom: 0;
   border-radius: 40px 40px 0 0;
 
@@ -140,13 +139,17 @@ button {
 }
 
 .idee-2 header div.back {
-  filter: blur(6px);
+  filter: blur(3px);
   z-index: 1;
 
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+.idee-2 header div.back h1{
+  filter: blur(5px);
 }
 
 .idee-2 header div.front {
@@ -163,10 +166,37 @@ button {
 
 @media screen and (min-width: 600px) {
   .idee-2 header {
-    margin: 5rem auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 100%;
   }
 }
+
+/* call to action */
+
+.idee-2 .call-to-action{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #F5E86B;
+  padding: 0 -1rem;
+  height: 100px;
+}
+
+.idee-2 .call-to-action .ditital-natives{
+
+}
+
+.idee-2 .call-to-action .contact{
+
+}
+
+@media screen and (min-width: 600px) {
+  .idee-2 .call-to-action{
+    padding: 0 -5rem;
+  }
+}
+
+
 /* main */
 
 .idee-1 main {
@@ -339,6 +369,3 @@ main audio::-webkit-media-controls-time-remaining-display {
   }
 }
 
-.no-bleur {
-  filter: blur(3px);
-}
