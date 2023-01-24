@@ -1,0 +1,545 @@
+/* HTML */
+
+:root {
+  --c-primary: #e30059;
+  --c-secondary: #b9005f;
+
+  --c-background-light: #ff0000;
+  --c-background-dark: #222224;
+
+  --c-color-light: #fff;
+  --c-color-dark: #222224;
+
+  --small-screen-width: 400px;
+  --midium-screen-width: 600px;
+  --large-screen-width: 1100px;
+  --extra-large-screen-width: 1600px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--b-radius-medium);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #020202;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-background-light);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: clamp(1.8em, 6vw, 9em);
+  line-height: 1.1;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 6vw, 4em);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 5vw, 2.5em);
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+}
+
+ol,
+ul {
+  font-size: 1.25em;
+  margin-left: 2em;
+}
+li {
+  padding-bottom: 1em;
+}
+
+/*bleurs*/
+
+.small-blur {
+  filter: blur(3px);
+}
+.medium-blur {
+  filter: blur(6px);
+}
+.larg-blur {
+  filter: blur(9px);
+}
+.extra-large-blur {
+  filter: blur(18px);
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+
+  ol,
+  ul {
+    font-size: 1.5em;
+  }
+}
+
+/* header */
+
+header {
+  background-color: var(--c-background-light);
+  overflow-x: hidden;
+  padding: 0 1.5em 0 1.5em;
+  max-width: 120em;
+  margin: 0 auto;
+  z-index: 2;
+  /* clip-path: circle(7em); */
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  overflow-x: hidden;
+
+  max-width: 120em;
+  margin: 0 auto;
+  padding: 0 1.5em 0 1.5em;
+  background-color: var(--c-background-light);
+
+  filter: blur(5px);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.hero {
+  height: 100vh;
+  height: 100svh;
+  padding: 3em 0 6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  position: relative;
+  max-height: 80em;
+}
+
+.arrow {
+  position: absolute;
+  height: 1.5em;
+  aspect-ratio: 2/1;
+  bottom: 2em;
+  left: 50%;
+}
+
+.arrow-active {
+  animation-name: arrow;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -75%);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+.arrow-style {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 30;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.site-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.site-identity a {
+  text-decoration: none;
+  color: #020202;
+  text-align: center;
+}
+
+main .site-identity a {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.site-identity p {
+  text-align: center;
+}
+
+.site-identity p span {
+  font-weight: 600;
+}
+
+.site-identity svg {
+  height: 4em;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.site-title .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-title svg {
+  width: 80%;
+}
+
+svg .pupil {
+  fill: #020202;
+}
+
+svg .cros {
+  fill: none;
+  /* stroke: #ff0000; */
+  stroke: #020202;
+  stroke-width: 15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+svg .inner-aye {
+  fill: none;
+  stroke: #020202;
+  stroke-width: 21;
+  stroke-miterlimit: 10;
+}
+
+svg .aye {
+  fill: none;
+  stroke: #020202;
+  stroke-width: 21;
+  stroke-miterlimit: 10;
+}
+
+svg .aye:hover {
+  fill: #020202;
+}
+
+.extra-info {
+  height: 4em;
+}
+
+/* site content */
+
+.site-content {
+  padding: 10em 0 10em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  /* word-break: break-word; */
+}
+
+.site-content p {
+  padding-bottom: 1em;
+}
+
+.site-content p:nth-of-type(1) {
+  padding-top: 1em;
+}
+
+.site-content p:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+.ontoeganelijk-internet {
+  max-width: 60em;
+  padding: 3em 0;
+}
+
+.info-bron {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.info-bron div {
+  width: 100%;
+  /* padding: 2em;
+background-color: orange;
+border-radius: 10px; */
+}
+
+/* call to action*/
+
+.call-to-action {
+  background-color: #c60505;
+  margin: 0 -1.5em;
+  padding: 5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.call-to-action-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.call-to-action a {
+  text-align: center;
+}
+
+.call-to-action svg {
+  max-height: 10em;
+  width: 80%;
+}
+
+.call-to-action h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.call-to-action-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.doe-mee {
+  max-width: 600px;
+  width: 100%;
+}
+
+.call-to-action .doe-mee a {
+  display: inline-block;
+  margin: 0.2em 0;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #020202;
+  text-decoration: none;
+}
+
+.call-to-action .doe-mee a:hover {
+  background-color: #333333;
+}
+
+form .formulier-naam {
+  display: flex;
+  flex-direction: column;
+}
+
+form .formulier-naam div {
+  width: 100%;
+}
+
+label {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.7em 1em;
+  margin: 0.4em 0 1em 0;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 2.7em;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+textarea:hover,
+select:hover {
+  outline: 0.2em solid black;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: 0.2em solid black;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  margin: 0.2em 0;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #020202;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #333333;
+}
+
+@media screen and (min-width: 33em) {
+  h1 {
+    text-align: left;
+  }
+
+  .site-title {
+    flex-direction: row;
+  }
+
+  .site-title svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  header {
+    padding: 0 3em 0 3em;
+  }
+
+  main {
+    padding: 0 3em 0 3em;
+  }
+
+  .hero {
+    padding: 5em 0 6em 0;
+  }
+
+  .site-identity {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-identity a {
+    text-align: left;
+  }
+
+  .site-identity p {
+    text-align: left;
+  }
+
+  .arrow {
+    height: 3em;
+  }
+
+  .call-to-action {
+    margin: 0 -3em 0 -3em;
+    padding: 5em 3em;
+  }
+
+  .call-to-action-title {
+    flex-direction: row;
+    align-items: center;
+  }
+  .call-to-action h2 {
+    text-align: left;
+  }
+
+  .call-to-action svg {
+    height: 8em;
+    width: 100%;
+  }
+
+  label {
+    font-size: 1.25em;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  form .formulier-naam {
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  header {
+    padding: 0 5% 0 5%;
+  }
+
+  main {
+    padding: 0 5% 0 5%;
+  }
+
+  .call-to-action {
+    margin: 0 -6% 0 -6%;
+    padding: 5em 6% 5em 6%;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .call-to-action-content {
+    flex-direction: row;
+  }
+  .info-bron {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .site-title {
+  align-items: center;
+  }
+
+  .site-title svg {
+    height: 15em;
+  }
+}
