@@ -19,8 +19,4 @@ https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mo
 
 (sommige teksten kunnen nog worden of zijn aangepast)
 
-![image](https://user-images.githubusercontent.com/112861160/214569145-28771a81-804b-419a-8b59-0264ec043715.png)
-![image](https://user-images.githubusercontent.com/112861160/214569190-4aaaa668-986e-453b-a363-f63d33491078.png)
-![image](https://user-images.githubusercontent.com/112861160/214569217-976a3b59-8d53-41f6-beac-6459d23904e4.png)
-![image](https://user-images.githubusercontent.com/112861160/214569278-02122d35-fe82-4d1b-899d-8ca6ca6a6ce4.png)
-![image](https://user-images.githubusercontent.com/112861160/214569336-d2dd1e68-0815-4a75-904a-d77b3e87e5d4.png)
+![sascha-davidson github io_the-startup-responsive-interactieve-website_mobile-first-demo_index-v2 html (1)](https://user-images.githubusercontent.com/112861160/214674183-4e01e26f-367b-4ef3-85ba-af5a983ba7f2.png)
