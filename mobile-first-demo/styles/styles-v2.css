@@ -105,7 +105,7 @@ header {
   z-index: 2;
 }
 
-.clip-path{
+.clip-path {
   clip-path: circle(6em at var(--x) var(--y));
 }
 
@@ -219,9 +219,9 @@ main .site-identity a {
   width: 80%;
 }
 
-main .site-title h1, main .site-title svg {
+main .site-title h1,
+main .site-title svg {
   filter: blur(var(--extra-large-blur));
-
 }
 
 svg .pupil {
@@ -252,8 +252,58 @@ svg .aye {
   stroke-miterlimit: 10;
 }
 
-svg .aye:hover {
-  fill: #020202;
+svg .aye {
+  animation-name: aye;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aye {
+  0% {
+    fill: none;
+  }
+  10% {
+    fill: #020202;
+  }
+  160% {
+    fill: none;
+  }
+  22% {
+    fill: none;
+  }
+  28% {
+    fill: #020202;
+  }
+  34% {
+    fill: #020202;
+  }
+  40% {
+    fill: none;
+  }
+  48% {
+    fill: none;
+  }
+  54% {
+    fill: #020202;
+  }
+  61% {
+    fill: none;
+  }
+  70% {
+    fill: none;
+  }
+  77% {
+    fill: #020202;
+  }
+  82% {
+    fill: none;
+  }
+  90% {
+    fill: #020202;
+  }
+  100% {
+    fill: none;
+  }
 }
 
 .extra-info {
@@ -291,11 +341,11 @@ svg .aye:hover {
   max-width: 60em;
 }
 
-main .site-content h2{
+main .site-content h2 {
   filter: blur(var(--extra-large-blur));
 }
 
-main .site-content h3{
+main .site-content h3 {
   filter: blur(var(--large-blur));
 }
 
@@ -416,15 +466,15 @@ input[type="submit"]:hover {
   background-color: #333333;
 }
 
-main .call-to-action h2{
+main .call-to-action h2 {
   filter: blur(var(--extra-large-blur));
 }
 
-main .call-to-action h3{
+main .call-to-action h3 {
   filter: blur(var(--large-blur));
 }
 
-main .call-to-action svg{
+main .call-to-action svg {
   filter: blur(var(--extra-large-blur));
 }
 
@@ -535,7 +585,7 @@ main .call-to-action svg{
 
 @media screen and (min-width: 120em) {
   .site-title {
-  align-items: center;
+    align-items: center;
   }
 
   .site-title svg {
