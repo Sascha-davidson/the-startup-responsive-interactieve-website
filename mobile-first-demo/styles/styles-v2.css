@@ -1,19 +1,16 @@
 /* HTML */
 
 :root {
-  --c-primary: #e30059;
-  --c-secondary: #b9005f;
-
+  --c-primary: #222224;
+  --c-secondary: #fff;
   --c-background-light: #ff0000;
-  --c-background-dark: #222224;
+  --c-background-dark: #c60505;
 
-  --c-color-light: #fff;
-  --c-color-dark: #222224;
-
-  --small-screen-width: 400px;
-  --midium-screen-width: 600px;
-  --large-screen-width: 1100px;
-  --extra-large-screen-width: 1600px;
+  /* blur */
+  --small-blur: 4px;
+  --medium-blur: 5px;
+  --large-blur: 7px;
+  --extra-large-blur: 13px;
 }
 
 ::-webkit-scrollbar {
@@ -82,21 +79,6 @@ li {
   padding-bottom: 1em;
 }
 
-/*bleurs*/
-
-.small-blur {
-  filter: blur(3px);
-}
-.medium-blur {
-  filter: blur(6px);
-}
-.larg-blur {
-  filter: blur(9px);
-}
-.extra-large-blur {
-  filter: blur(18px);
-}
-
 @media screen and (min-width: 600px) {
   p {
     font-size: 1.5em;
@@ -121,7 +103,10 @@ header {
   max-width: 120em;
   margin: 0 auto;
   z-index: 2;
-  /* clip-path: circle(7em); */
+}
+
+.clip-path{
+  clip-path: circle(6em at var(--x) var(--y));
 }
 
 main {
@@ -138,7 +123,7 @@ main {
   padding: 0 1.5em 0 1.5em;
   background-color: var(--c-background-light);
 
-  filter: blur(5px);
+  filter: blur(var(--medium-blur));
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -203,9 +188,7 @@ main {
 }
 
 main .site-identity a {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  filter: blur(var(--large-blur));
 }
 
 .site-identity p {
@@ -234,6 +217,11 @@ main .site-identity a {
 
 .site-title svg {
   width: 80%;
+}
+
+main .site-title h1, main .site-title svg {
+  filter: blur(var(--extra-large-blur));
+
 }
 
 svg .pupil {
@@ -300,22 +288,21 @@ svg .aye:hover {
 }
 
 .info-bron {
-  display: flex;
-  flex-direction: column;
-  gap: 4em;
+  max-width: 60em;
 }
 
-.info-bron div {
-  width: 100%;
-  /* padding: 2em;
-background-color: orange;
-border-radius: 10px; */
+main .site-content h2{
+  filter: blur(var(--extra-large-blur));
+}
+
+main .site-content h3{
+  filter: blur(var(--large-blur));
 }
 
 /* call to action*/
 
 .call-to-action {
-  background-color: #c60505;
+  background-color: var(--c-background-dark);
   margin: 0 -1.5em;
   padding: 5em 1.5em;
   display: flex;
@@ -427,6 +414,18 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #333333;
+}
+
+main .call-to-action h2{
+  filter: blur(var(--extra-large-blur));
+}
+
+main .call-to-action h3{
+  filter: blur(var(--large-blur));
+}
+
+main .call-to-action svg{
+  filter: blur(var(--extra-large-blur));
 }
 
 @media screen and (min-width: 33em) {
