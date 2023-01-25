@@ -17,7 +17,7 @@ Dit is de start-up project die ik gemaakt heb voor "Digital Natives". Bij dit pr
 ## mijn laatste uitwerking<br>
 https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mobile-first-demo/index-v2.html
 
-(sommige content kan nog worden/zijn aangepast)
+(sommige teksten kunnen nog worden of zijn aangepast)
 
 ![image](https://user-images.githubusercontent.com/112861160/214569145-28771a81-804b-419a-8b59-0264ec043715.png)
 ![image](https://user-images.githubusercontent.com/112861160/214569190-4aaaa668-986e-453b-a363-f63d33491078.png)
