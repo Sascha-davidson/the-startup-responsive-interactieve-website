@@ -105,7 +105,7 @@ header {
   z-index: 2;
 }
 
-.clip-path {
+.cursor {
   clip-path: circle(6em at var(--x) var(--y));
 }
 
