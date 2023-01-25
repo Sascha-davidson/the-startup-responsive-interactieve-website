@@ -196,7 +196,6 @@ main {
 }
 
 .site-identity a span{
-  visibility: hidden;
 }
 
 main .site-identity a {
@@ -276,9 +275,6 @@ svg .aye {
   }
   10% {
     fill: #020202;
-  }
-  160% {
-    fill: none;
   }
   22% {
     fill: none;
