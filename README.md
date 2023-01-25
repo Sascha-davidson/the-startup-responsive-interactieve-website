@@ -11,7 +11,7 @@
 ![image](https://user-images.githubusercontent.com/112861160/214568919-4460e012-c5fe-42e0-ba34-8cddce16ea16.png)
 
 
-##mijn laatste uitwerking
+##mijn laatste uitwerking<br>
 https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mobile-first-demo/index-v2.html
 
 (sommige content kan nog worden/zijn aangepast)
