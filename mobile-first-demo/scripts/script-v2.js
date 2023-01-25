@@ -30,12 +30,28 @@
 
 
 let pos = document.documentElement;
-pos.addEventListener("mousemove", e =>{
-    pos.style.setProperty('--x', e.clientX + "px")
-    pos.style.setProperty('--y', e.clientY + "px")
-    console.log("pos")
-})
+let posX = 0;
+let posY = 0;
 
+pos.addEventListener("mousemove", e =>{
+    posX = e.clientX;
+    posY = e.clientY;
+    Render();
+});
+
+
+document.addEventListener("scroll", e => {
+    Render();
+});
+
+
+
+function Render() {
+    let yOffset = window.pageYOffset;
+
+    pos.style.setProperty('--x', posX + "px")
+    pos.style.setProperty('--y', posY + yOffset + "px")
+}
 
 
 
