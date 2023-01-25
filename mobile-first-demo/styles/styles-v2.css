@@ -195,6 +195,10 @@ main {
   text-align: center;
 }
 
+.site-identity a span{
+  visibility: hidden;
+}
+
 main .site-identity a {
   filter: blur(var(--large-blur));
 }
