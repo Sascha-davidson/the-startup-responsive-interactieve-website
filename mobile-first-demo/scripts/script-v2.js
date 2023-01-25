@@ -28,33 +28,23 @@
 //     console.log(x);
 // })
 
-
 let pos = document.documentElement;
 let posX = 0;
 let posY = 0;
 
-pos.addEventListener("mousemove", e =>{
+pos.addEventListener("mousemove", (e) => {
     posX = e.clientX;
     posY = e.clientY;
     Render();
 });
 
-
-document.addEventListener("scroll", e => {
+document.addEventListener("scroll", (e) => {
     Render();
 });
-
-
 
 function Render() {
     let yOffset = window.pageYOffset;
 
-    pos.style.setProperty('--x', posX + "px")
-    pos.style.setProperty('--y', posY + yOffset + "px")
+    pos.style.setProperty("--x", posX + "px");
+    pos.style.setProperty("--y", posY + yOffset + "px");
 }
-
-
-
-
-
-
