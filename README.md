@@ -1,17 +1,17 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-##mijn eerste idee
+## mijn eerste idee
 
 ![image](https://user-images.githubusercontent.com/112861160/214568205-77fd8660-6662-4f02-96ef-8708717522cb.png)
 
-##mijn tweede idee
+## mijn tweede idee
 
 (is alleen een test face geworden)
 
 ![image](https://user-images.githubusercontent.com/112861160/214568919-4460e012-c5fe-42e0-ba34-8cddce16ea16.png)
 
 
-##mijn laatste uitwerking<br>
+## mijn laatste uitwerking<br>
 https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mobile-first-demo/index-v2.html
 
 (sommige content kan nog worden/zijn aangepast)
