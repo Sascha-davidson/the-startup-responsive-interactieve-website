@@ -1,19 +1,23 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+##mijn eerste idee
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+![image](https://user-images.githubusercontent.com/112861160/214568205-77fd8660-6662-4f02-96ef-8708717522cb.png)
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+##mijn tweede idee
+
+(is alleen een test face geworden)
+
+![image](https://user-images.githubusercontent.com/112861160/214568919-4460e012-c5fe-42e0-ba34-8cddce16ea16.png)
 
 
-## Licentie
+##mijn laatste uitwerking
+https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mobile-first-demo/index-v2.html
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+(sommige content kan nog worden/zijn aangepast)
 
-This work is licensed under [GNU GPLv3](./LICENSE).
+![image](https://user-images.githubusercontent.com/112861160/214569145-28771a81-804b-419a-8b59-0264ec043715.png)
+![image](https://user-images.githubusercontent.com/112861160/214569190-4aaaa668-986e-453b-a363-f63d33491078.png)
+![image](https://user-images.githubusercontent.com/112861160/214569217-976a3b59-8d53-41f6-beac-6459d23904e4.png)
+![image](https://user-images.githubusercontent.com/112861160/214569278-02122d35-fe82-4d1b-899d-8ca6ca6a6ce4.png)
+![image](https://user-images.githubusercontent.com/112861160/214569336-d2dd1e68-0815-4a75-904a-d77b3e87e5d4.png)
