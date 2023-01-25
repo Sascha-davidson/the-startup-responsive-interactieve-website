@@ -79,7 +79,11 @@ li {
   padding-bottom: 1em;
 }
 
-@media screen and (min-width: 600px) {
+label{
+  font: 1.25em;
+}
+
+@media screen and (min-width: 37.5em) {
   p {
     font-size: 1.5em;
   }
@@ -90,6 +94,10 @@ li {
 
   ol,
   ul {
+    font-size: 1.5em;
+  }
+
+  label{
     font-size: 1.5em;
   }
 }
@@ -417,7 +425,6 @@ form .formulier-naam div {
 
 label {
   padding-left: 1em;
-  font-size: 1em;
 }
 
 input,
@@ -541,14 +548,10 @@ main .call-to-action svg {
     width: 100%;
   }
 
-  label {
-    font-size: 1.25em;
-  }
-
   input,
   textarea,
   select {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
