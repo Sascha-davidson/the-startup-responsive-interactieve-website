@@ -4,7 +4,7 @@
 
 ## inleiding
 
-  * [De opdrachtgever](##de-opdrachtgever)
+  * [De opdrachtgever](#de-opdrachtgever)
   * [De opdracht](#De-opdracht)
   * [De product](#De-product)
   * [Interactie](#Interactie)
@@ -37,9 +37,9 @@ https://sascha-davidson.github.io/the-startup-responsive-interactieve-website/mo
 <br>
 
 ## Interactie 
+De gebruiker kan op deze pagina informatie vinden over internet toegankelijkheid, maar de website is niet toegankelijk en je moet met je muis over de tekst bewegen om het te kunnen lezen.
 
 <br>
-
 
 ## Tools
 * HTML
